@@ -43,5 +43,5 @@ Below is a snippet of all of the inputs and outputs of each task example:
 
 ![Alt Text](https://github.com/ObscureNightingale/odd-jobs/blob/main/media/fstw.gif)
 
-![Alt Text 2](https://github.com/ObscureNightingale/odd-jobs/tree/mainmedia/sndtwo.gif)
+![Alt Text 2](https://github.com/ObscureNightingale/odd-jobs/blob/main/media/sndtwo.gif)
 </span>
