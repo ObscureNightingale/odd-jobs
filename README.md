@@ -41,6 +41,7 @@ It matches each required task against the current list of completed tasks, and i
 
 Below is a snippet of all of the inputs and outputs of each task example:
 
-![First Image](https://github.com/ObscureNightingale/odd-jobs/media/fstw.gif)
-![Second Image](https://github.com/ObscureNightingale/odd-jobs/media/sndtwo.gif)
+![Alt Text](https://github.com/ObscureNightingale/odd-jobs/blob/main/media/fstw.gif)
+
+![Alt Text 2](https://github.com/ObscureNightingale/odd-jobs/tree/mainmedia/sndtwo.gif)
 </span>
