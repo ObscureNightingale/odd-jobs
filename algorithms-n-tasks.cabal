@@ -1,0 +1,57 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: bd42322b7e84039d777cc04c814d7c7f1aaab0dae91347f9d6646dfd63740c2d
+
+name:           algorithms-n-tasks
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/algorithms-n-tasks#readme>
+homepage:       https://github.com/ObscureNightingale/algorithms-n-tasks#readme
+bug-reports:    https://github.com/ObscureNightingale/algorithms-n-tasks/issues
+author:         Kenneth
+maintainer:     mg.capljina@gmail.com
+copyright:      2021 Kenneth
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/ObscureNightingale/algorithms-n-tasks
+
+library
+  exposed-modules:
+      Parser.IO
+      Parser.Util
+  other-modules:
+      Paths_algorithms_n_tasks
+  hs-source-dirs:
+      src
+  build-depends:
+      async >=2.2.3
+    , base >=4.7 && <5
+    , rainbow >=0.34.2.2
+    , strict >=0.4
+    , text >=1
+  default-language: Haskell2010
+
+executable algorithms-n-tasks-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_algorithms_n_tasks
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      algorithms-n-tasks
+    , async >=2.2.3
+    , base >=4.7 && <5
+    , rainbow >=0.34.2.2
+    , strict >=0.4
+    , text >=1
+  default-language: Haskell2010
