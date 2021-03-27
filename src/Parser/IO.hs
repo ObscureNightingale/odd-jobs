@@ -27,10 +27,9 @@ acquired (("1", fs) : (_, _) : ("3", xs) : zs) =
 acquired' :: [([String], [String])] -> [String] -> [String]
 acquired' [] ys = ys
 acquired' xs [] = []
-acquired' ((x, y) : xs) ys =
-  if all' x ys
-    then removeDup (filter' y ys ++ reverse (acquired' xs (y ++ ys)))
-    else []
+acquired' ((x, y) : xs) ys
+  | all' x ys = removeDup (acquired' xs (y ++ ys) ++ filter' y ys)
+  | otherwise = acquired' xs ys
 
 readInput :: IO [String]
 readInput = do
